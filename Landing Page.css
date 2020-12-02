@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: #ffc8e0;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-div{
+    flex-basis: 15%;
+}
+
+.left-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo{
+    height: 80px;
+    cursor: pointer;
+}
+.right-div{
+    flex-basis: 85%;
+}
+
+.nav-menu{
+    display: flex;
+    margin-top: 50px;
+}
+
+.nav-items{
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 55px;
+    font-size: 13px;
+    position: relative;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-items li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 100%;
+}
+
+.nav-items li:hover::before{
+    background: #9c78ff;
+    transition: 0.5s;
+}
+
+.social-media{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.social-media li{
+    list-style: none;
+    margin-right: 15px;
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.2);
+}
+
+.social-media li i{
+    color: #de4e95;
+}
+
+.social-media li:hover{
+    transform: scale(1.08);
+}
+
+.content{
+    display: flex;
+    margin-top: 70px;
+}
+
+.content-text{
+    flex-basis: 35%;
+    margin-top: 30px;
+}
+
+.content-image{
+    flex-basis: 65%;
+    text-align: center;
+    z-index: 2;
+}
+
+.content-image img{
+    height: 350px;
+    width: 430px;
+    border: 20px white solid;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.2);
+}
+
+.content-text h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.content-text h2:nth-child(1){
+    font-weight: 100;
+}
+
+.content-text h2:nth-child(2){
+    font-weight: bolder;
+}
+
+.content-text p{
+    margin-top: 20px;
+}
+
+.content-text span{
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 50px;
+    color: #de4e95;
+}
+
+.content-text button{
+    height: 35px;
+    width: 130px;
+    background: #9c78ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: wheat;
+    letter-spacing: 1px ;
+    border-radius: 3px;
+    margin-top: 30px;
+    box-shadow: 3px 6px 10px rgba(0,0,0,0.2);
+}
+
+.content-text button:hover{
+    background-color: #8967e4;
+}
+
+.bubble1{
+    height: 500px;
+    position: absolute;
+    left:23%;
+    bottom: -60%;
+}
+
+.bubble2{
+    height: 500px;
+    position: absolute;
+    right: -220px;
+    top: -140px;
+}
